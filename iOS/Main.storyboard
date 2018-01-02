@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2765">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About-->
+        <!--Tab Bar Controller-->
+        <!--Browse-->
+        <!--About-->
+        <!--Items-->
+        <!--Title-->
+        <!--New Item-->
+        <scene sceneID="2764">
+            <objects>
+                <viewController id="2765" sceneMemberID="viewController" storyboardIdentifier="splashScreen" customClass="mainViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2762"/>
+                        <viewControllerLayoutGuide type="bottom" id="2763"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2766">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.4392156862745098" green="0.85098039215686272" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5368" translatesAutoresizingMaskIntoConstraints="NO" image="logo">
+                                <rect key="frame" x="40" y="175" width="240" height="240"/>
+                                <constraints>
+                                    <constraint id="5386" firstItem="5368" firstAttribute="height" constant="240"/>
+                                    <constraint id="5391" firstItem="5368" firstAttribute="width" constant="240"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5381" animating="YES" misplaced="YES">
+                                <rect key="frame" x="142" y="441" width="37" height="37"/>
+                                <constraints>
+                                    <constraint id="5422" firstItem="5381" firstAttribute="height" constant="40"/>
+                                    <constraint id="5427" firstItem="5381" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="5396" firstItem="5368" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
+                            <constraint id="5401" firstItem="5368" firstAttribute="centerY" secondItem="2766" secondAttribute="centerY" constant="11"/>
+                            <constraint id="5446" firstItem="5381" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
+                            <constraint id="5451" firstItem="5381" firstAttribute="top" secondItem="5368" secondAttribute="bottom" constant="30"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2767" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1882" y="-878"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="512x512.png" width="512" height="512"/>
+        <image name="logo" width="1024" height="1024"/>
+    </resources>
+</document>
