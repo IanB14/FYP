@@ -1,9 +1,7 @@
 ﻿<Properties StartupConfiguration="{AE729E7D-1502-4242-B747-82D023989886}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FYP Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.storyboard">
     <Files>
       <File FileName="iOS/Main.storyboard" />
-      <File FileName="iOS/ViewControllers/mainViewController.cs" Line="16" Column="90" />
-      <File FileName="FYP Status" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" />
