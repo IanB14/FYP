@@ -16,8 +16,9 @@
 /Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/FYP.iOS.csproj.CoreCompileInputs.cache
 /Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/FYP.iOS.exe
 /Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/FYP.iOS.pdb
-/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/ibtool/_BundleResourceWithLogicalName.items
-/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/actool/_PartialAppManifest.items
-/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/actool/_BundleResourceWithLogicalName.items
-/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/512x512.png
-/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.3-11.2/optimized/
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/FYP.iOS.csprojResolveAssemblyReference.cache
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.2/ibtool/_BundleResourceWithLogicalName.items
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.2/actool/_PartialAppManifest.items
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.2/actool/_BundleResourceWithLogicalName.items
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.2/optimized/512x512.png
+/Users/Ian/Projects/FYP/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone8.4-11.2/optimized/

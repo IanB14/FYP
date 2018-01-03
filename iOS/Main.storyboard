@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2765">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6573">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                         <color key="backgroundColor" colorSpace="calibratedRGB" red="0.4392156862745098" green="0.85098039215686272" blue="0.18431372549019609" alpha="1"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5368" translatesAutoresizingMaskIntoConstraints="NO" image="logo">
-                                <rect key="frame" x="40" y="175" width="240" height="240"/>
+                                <rect key="frame" x="40" y="164" width="240" height="240"/>
                                 <constraints>
                                     <constraint id="5386" firstItem="5368" firstAttribute="height" constant="240"/>
                                     <constraint id="5391" firstItem="5368" firstAttribute="width" constant="240"/>
@@ -44,7 +44,7 @@
                         </subviews>
                         <constraints>
                             <constraint id="5396" firstItem="5368" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
-                            <constraint id="5401" firstItem="5368" firstAttribute="centerY" secondItem="2766" secondAttribute="centerY" constant="11"/>
+                            <constraint id="5401" firstItem="5368" firstAttribute="centerY" secondItem="2766" secondAttribute="centerY"/>
                             <constraint id="5446" firstItem="5381" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
                             <constraint id="5451" firstItem="5381" firstAttribute="top" secondItem="5368" secondAttribute="bottom" constant="30"/>
                         </constraints>
@@ -56,9 +56,302 @@
             </objects>
             <point key="canvasLocation" x="1882" y="-878"/>
         </scene>
+        <scene sceneID="6572">
+            <objects>
+                <viewController id="6573" sceneMemberID="viewController" customClass="LoginScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6570"/>
+                        <viewControllerLayoutGuide type="bottom" id="6571"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6574">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.4392156862745098" green="0.84705882352941175" blue="0.1803921568627451" alpha="1"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="6577" translatesAutoresizingMaskIntoConstraints="NO" spacing="8" misplaced="YES">
+                                <rect key="frame" x="26" y="186" width="268" height="196"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6581" translatesAutoresizingMaskIntoConstraints="NO" image="smallerLogo">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="82"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6587" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Username" textAlignment="center">
+                                        <rect key="frame" x="0.0" y="90" width="268" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="username" autocorrectionType="no" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="6586" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Password" textAlignment="center">
+                                        <rect key="frame" x="0.0" y="128" width="268" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" id="18151" translatesAutoresizingMaskIntoConstraints="NO" alignment="center" distribution="fillEqually">
+                                        <rect key="frame" x="0.0" y="166" width="268" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="17415" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="0.0" y="0.0" width="134" height="30"/>
+                                                <state key="normal" title="Log In">
+                                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                                </state>
+                                                <connections>
+                                                    <segue id="17640" destination="13041" kind="show"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="16031" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="134" y="0.0" width="134" height="30"/>
+                                                <state key="normal" title="Reset Password">
+                                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                                </state>
+                                                <connections>
+                                                    <segue id="17413" destination="10074" kind="show"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7683" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="528" width="288" height="30"/>
+                                <state key="normal" title="Create Account">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="8504" destination="8338" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="6588" firstItem="6577" firstAttribute="centerX" secondItem="6574" secondAttribute="centerX"/>
+                            <constraint id="6589" firstItem="6577" firstAttribute="centerY" secondItem="6574" secondAttribute="centerY"/>
+                            <constraint id="6590" firstItem="6574" firstAttribute="trailingMargin" secondItem="6577" secondAttribute="trailing" constant="10"/>
+                            <constraint id="6591" firstItem="6577" firstAttribute="leading" secondItem="6574" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="7684" firstItem="6571" firstAttribute="top" secondItem="7683" secondAttribute="bottom" constant="10"/>
+                            <constraint id="7685" firstItem="7683" firstAttribute="leading" secondItem="6574" secondAttribute="leadingMargin"/>
+                            <constraint id="7686" firstItem="6574" firstAttribute="trailingMargin" secondItem="7683" secondAttribute="trailing"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6575" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="-252"/>
+        </scene>
+        <scene sceneID="8337">
+            <objects>
+                <viewController id="8338" sceneMemberID="viewController" customClass="CreateAccountScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8335"/>
+                        <viewControllerLayoutGuide type="bottom" id="8336"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8339" customClass="createAccountScreen">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.10980392156862745" green="0.49803921568627452" blue="0.99215686274509807" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8974" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="27" y="269" width="266" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to Login Screen">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="12568" destination="10912" kind="unwind" unwindAction="UnwindToLoginScreen:"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10434" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="54" y="219" width="212" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8340" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="10912" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1877" y="739"/>
+        </scene>
+        <scene sceneID="10073">
+            <objects>
+                <viewController id="10074" sceneMemberID="viewController" customClass="ResetPasswordScreen">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="10071"/>
+                        <viewControllerLayoutGuide type="bottom" id="10072"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="10075">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.82352941176470584" green="0.082352941176470587" blue="0.0196078431372549" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="10079" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="27" y="269" width="266" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Return to Login Screen">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="12097" destination="10913" kind="unwind" unwindAction="UnwindToLoginScreen:"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="10435" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="54" y="219" width="212" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10076" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="10913" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2386" y="743"/>
+        </scene>
+        <scene sceneID="13040">
+            <objects>
+                <viewController id="13041" sceneMemberID="viewController" customClass="mainMenu">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="13038"/>
+                        <viewControllerLayoutGuide type="bottom" id="13039"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="13042">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.38039215686274508" green="0.83137254901960789" blue="0.13333333333333333" alpha="1"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="13045" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" spacing="5">
+                                <rect key="frame" x="54" y="118" width="211" height="320.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="13049" translatesAutoresizingMaskIntoConstraints="NO" image="smallerLogo">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="85"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" id="13046" translatesAutoresizingMaskIntoConstraints="NO" distribution="fillEqually">
+                                        <rect key="frame" x="0.0" y="90" width="211" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13047" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13048" translatesAutoresizingMaskIntoConstraints="NO">
+                                                <rect key="frame" x="105.5" y="0.0" width="105.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13054" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="115.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="Prescriptions">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13055" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="150.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="Drug List">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13056" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="185.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="QR Scanner">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13057" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="220.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="Pharmacies">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13058" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="255.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="Doctors">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13059" translatesAutoresizingMaskIntoConstraints="NO">
+                                        <rect key="frame" x="0.0" y="290.5" width="211" height="30"/>
+                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                        <state key="normal" title="Account">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13203" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="116" y="518" width="87" height="30"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="17329" destination="13044" kind="unwind" unwindAction="UnwindToLoginScreen:"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="13060" firstItem="13045" firstAttribute="centerX" secondItem="13042" secondAttribute="centerX"/>
+                            <constraint id="13061" firstItem="13042" firstAttribute="centerY" secondItem="13045" secondAttribute="centerY" constant="5"/>
+                            <constraint id="13062" firstItem="13042" firstAttribute="trailingMargin" secondItem="13045" secondAttribute="trailing" constant="10"/>
+                            <constraint id="13063" firstItem="13045" firstAttribute="leading" secondItem="13042" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="13204" firstItem="13203" firstAttribute="centerX" secondItem="13042" secondAttribute="centerX"/>
+                            <constraint id="13205" firstItem="13039" firstAttribute="top" secondItem="13203" secondAttribute="bottom" constant="10"/>
+                            <constraint id="13206" firstItem="13042" firstAttribute="trailingMargin" secondItem="13203" secondAttribute="trailing" constant="10"/>
+                            <constraint id="13207" firstItem="13203" firstAttribute="leading" secondItem="13042" secondAttribute="leadingMargin" constant="10"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="13043" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="13044" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2423" y="-296"/>
+        </scene>
     </scenes>
     <resources>
         <image name="512x512.png" width="512" height="512"/>
         <image name="logo" width="1024" height="1024"/>
+        <image name="smallerLogo" width="120" height="120"/>
     </resources>
 </document>

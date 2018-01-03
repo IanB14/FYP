@@ -118,6 +118,8 @@
     <ImageAsset Include="Assets.xcassets\logo.imageset\256x256.png" />
     <ImageAsset Include="Assets.xcassets\logo.imageset\512x512.png" />
     <ImageAsset Include="Assets.xcassets\logo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smallerLogo.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smallerLogo.imageset\120x120.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -125,6 +127,30 @@
     <Compile Include="ViewControllers\mainViewController.cs" />
     <Compile Include="ViewControllers\mainViewController.designer.cs">
       <DependentUpon>mainViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="createAccountScreen.cs" />
+    <Compile Include="createAccountScreen.designer.cs">
+      <DependentUpon>createAccountScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resetPasswordScreen.cs" />
+    <Compile Include="resetPasswordScreen.designer.cs">
+      <DependentUpon>resetPasswordScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginScreen.cs" />
+    <Compile Include="LoginScreen_.designer.cs">
+      <DependentUpon>LoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccountScreen_.cs" />
+    <Compile Include="CreateAccountScreen_.designer.cs">
+      <DependentUpon>CreateAccountScreen_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPasswordScreen_.cs" />
+    <Compile Include="ResetPasswordScreen_.designer.cs">
+      <DependentUpon>ResetPasswordScreen_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs" />
+    <Compile Include="mainMenu.designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -142,6 +168,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\logo.imageset\" />
+    <Folder Include="Assets.xcassets\smallerLogo.imageset\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />
