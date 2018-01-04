@@ -10,10 +10,10 @@ namespace FYP.iOS
         {
         }
 
-        [Action ("UnwindToLoginScreen:")]
-        public void UnwindToLoginScreen(UIStoryboardSegue segue){
-            
-        }
+        [Action("UnwindToLoginScreen:")]
+        public void UnwindToLoginScreen(UIStoryboardSegue segue)
+        {
 
+        }
     }
 }
