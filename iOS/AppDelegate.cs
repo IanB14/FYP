@@ -20,7 +20,8 @@ namespace FYP.iOS
         {
             App.Initialize();
 
-
+            // Change this line to change tab bar tint colour
+            UITabBar.Appearance.SelectedImageTintColor = UIColor.FromRGB(0x80, 0xcd, 0x3d);
 
             return true;
         }

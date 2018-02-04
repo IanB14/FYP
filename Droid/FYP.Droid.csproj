@@ -162,6 +162,10 @@
     <AndroidResource Include="Resources\values\styles.xml" />
     <AndroidResource Include="Resources\values-v19\styles.xml" />
     <AndroidResource Include="Resources\values-v21\styles.xml" />
+    <AndroidResource Include="Resources\layout\testLayout.axml" />
+    <AndroidResource Include="Resources\layout\splashScreen.axml" />
+    <AndroidResource Include="Resources\drawable\appIcon512.png" />
+    <AndroidResource Include="Resources\drawable\appIcon256.png" />
   </ItemGroup>
   <Import Project="..\FYP\FYP.projitems" Label="Shared" Condition="Exists('..\FYP\FYP.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

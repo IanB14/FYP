@@ -1,0 +1,16 @@
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/FYP.iOS.exe
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/mscorlib.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Mono.Security.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.Xml.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.Net.Http.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Xamarin.iOS.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.Core.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Newtonsoft.Json.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.Xml.Linq.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/System.Runtime.Serialization.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Microsoft.CSharp.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Plugin.Connectivity.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Plugin.Connectivity.Abstractions.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Plugin.Share.dll
+/Users/Ian/Projects/FYP/iOS/bin/iPhone/Debug/device-builds/iphone8.4-11.1.2/FYP.iOS.app:/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.1.2/mtouch-cache/Link/Plugin.Share.Abstractions.dll

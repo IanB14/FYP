@@ -9,9 +9,10 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FYP.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4CDBBDD6-D5B4-4DBF-BF22-D5EF1B901637" automaticSigning="False">
+  <MonoDevelop.Ide.ItemProperties.FYP.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FB2B2566-51AE-4361-A47F-27D47DCF8E70" automaticSigning="False">
     <MonoDevelop.MacDev.AppleDevelopmentTeam />
   </MonoDevelop.Ide.ItemProperties.FYP.iOS>
   <AuthorInfo Name="Ian Burke" Email="ian_burke@hotmail.com" Copyright="" Company="" Trademark="" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FYP.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="MasterDetailTheme" />
 </Properties>

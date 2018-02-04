@@ -1,0 +1,23 @@
+Function=xamarin_timezone_get_data
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_GetFolderPath
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/mscorlib.dll
+Function=xamarin_log
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/mscorlib.dll
+Function=CreateZStream
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=CloseZStream
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=Flush
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=ReadZStream
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=WriteZStream
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=xamarin_start_wwan
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/System.dll
+Function=UIApplicationMain
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=xamarin_get_block_descriptor
+	/Users/Ian/Projects/FYP/iOS/obj/iPhone/Debug/device-builds/iphone8.4-11.2.2/mtouch-cache/Link/Xamarin.iOS.dll
+Function=mono_pmip

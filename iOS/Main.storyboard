@@ -15,47 +15,6 @@
         <!--Items-->
         <!--Title-->
         <!--New Item-->
-        <scene sceneID="2764">
-            <objects>
-                <viewController id="2765" sceneMemberID="viewController" storyboardIdentifier="splashScreen" customClass="mainViewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="2762"/>
-                        <viewControllerLayoutGuide type="bottom" id="2763"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2766">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.4392156862745098" green="0.85098039215686272" blue="0.18431372549019609" alpha="1"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5368" translatesAutoresizingMaskIntoConstraints="NO" image="logo">
-                                <rect key="frame" x="40" y="164" width="240" height="240"/>
-                                <constraints>
-                                    <constraint id="5386" firstItem="5368" firstAttribute="height" constant="240"/>
-                                    <constraint id="5391" firstItem="5368" firstAttribute="width" constant="240"/>
-                                </constraints>
-                            </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5381" animating="YES" misplaced="YES">
-                                <rect key="frame" x="142" y="441" width="37" height="37"/>
-                                <constraints>
-                                    <constraint id="5422" firstItem="5381" firstAttribute="height" constant="40"/>
-                                    <constraint id="5427" firstItem="5381" firstAttribute="width" constant="40"/>
-                                </constraints>
-                            </activityIndicatorView>
-                        </subviews>
-                        <constraints>
-                            <constraint id="5396" firstItem="5368" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
-                            <constraint id="5401" firstItem="5368" firstAttribute="centerY" secondItem="2766" secondAttribute="centerY"/>
-                            <constraint id="5446" firstItem="5381" firstAttribute="centerX" secondItem="2766" secondAttribute="centerX"/>
-                            <constraint id="5451" firstItem="5381" firstAttribute="top" secondItem="5368" secondAttribute="bottom" constant="30"/>
-                        </constraints>
-                    </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <connections/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2767" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3165" y="-908"/>
-        </scene>
         <scene sceneID="6572">
             <objects>
                 <viewController id="6573" sceneMemberID="viewController" customClass="LoginScreen">
@@ -132,7 +91,7 @@
                                     <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 </state>
                                 <connections>
-                                    <segue id="30736" destination="13041" kind="show" identifier="segueToMainMenuScreen"/>
+                                    <segue id="37392" destination="34231" kind="show"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="30633" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
@@ -374,142 +333,514 @@
             </objects>
             <point key="canvasLocation" x="2386" y="743"/>
         </scene>
-        <scene sceneID="13040">
+        <scene sceneID="34230">
             <objects>
-                <viewController id="13041" sceneMemberID="viewController" customClass="mainMenu">
+                <viewController id="34231" sceneMemberID="viewController" customClass="MainMenu2">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="13038"/>
-                        <viewControllerLayoutGuide type="bottom" id="13039"/>
+                        <viewControllerLayoutGuide type="top" id="34228"/>
+                        <viewControllerLayoutGuide type="bottom" id="34229"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="13042">
+                    <view key="view" contentMode="scaleToFill" id="34232">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.38039215686274508" green="0.83137254901960789" blue="0.13725490196078433" alpha="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="13045" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES" spacing="5">
-                                <rect key="frame" x="54" y="118" width="211" height="320.5"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="13049" translatesAutoresizingMaskIntoConstraints="NO" image="smallerLogo">
-                                        <rect key="frame" x="0.0" y="0.0" width="211" height="85"/>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" id="13046" translatesAutoresizingMaskIntoConstraints="NO" distribution="fillEqually">
-                                        <rect key="frame" x="0.0" y="90" width="211" height="20.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13047" translatesAutoresizingMaskIntoConstraints="NO">
-                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="13048" translatesAutoresizingMaskIntoConstraints="NO">
-                                                <rect key="frame" x="105.5" y="0.0" width="105.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13054" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="115.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="Prescriptions">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13055" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="150.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="Drug List">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13056" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="185.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="QR Scanner">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13057" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="220.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="Pharmacies">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13058" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="255.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="Doctors">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13059" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="0.0" y="290.5" width="211" height="30"/>
-                                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                        <state key="normal" title="Account">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute keyPath="layer.cornerRadius" type="number">
-                                                <real key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="13203" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                <rect key="frame" x="116" y="518" width="87" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescriptions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34240" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="33" y="181" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drug List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34241" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="186" y="181" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34242" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="21" y="318" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34243" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="202" y="327" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="34245" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="33" y="472" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35177" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="196" y="476" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Menu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="36025" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="70" y="30" width="180" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30" weight="semibold"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logged in as Ian Burke - Patient" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="36895" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="21" y="513" width="275" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="37335" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="120" y="531" width="80" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17" weight="semibold"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                    <color key="titleColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
                                 </state>
                                 <connections>
-                                    <segue id="17329" destination="13044" kind="unwind" unwindAction="UnwindToLoginScreen:"/>
+                                    <segue id="37395" destination="34234" kind="unwind" unwindAction="UnwindToLoginScreen:"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="39811" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="34" y="79" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/prescriptions.png"/>
+                                <constraints>
+                                    <constraint id="39814" firstItem="39811" firstAttribute="width" constant="100"/>
+                                    <constraint id="39815" firstItem="39811" firstAttribute="height" constant="100"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="79023" destination="47574" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="40767" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="196" y="79" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/list.png"/>
+                                <constraints>
+                                    <constraint id="40770" firstItem="40767" firstAttribute="width" constant="100"/>
+                                    <constraint id="40771" firstItem="40767" firstAttribute="height" constant="100"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="56263" destination="56220" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="41581" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="34" y="218" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/qrCode.png"/>
+                                <constraints>
+                                    <constraint id="41584" firstItem="41581" firstAttribute="width" constant="100"/>
+                                    <constraint id="41585" firstItem="41581" firstAttribute="height" constant="100"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="54049" destination="53446" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="42007" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="196" y="218" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/pharmacyCross.png"/>
+                                <constraints>
+                                    <constraint id="42008" firstItem="42007" firstAttribute="width" constant="100"/>
+                                    <constraint id="42009" firstItem="42007" firstAttribute="height" constant="100"/>
+                                </constraints>
+                                <connections>
+                                    <segue id="60910" destination="60826" kind="show"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="42442" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="196" y="364" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/user.png"/>
+                                <constraints>
+                                    <constraint id="42443" firstItem="42442" firstAttribute="width" constant="100"/>
+                                    <constraint id="42444" firstItem="42442" firstAttribute="height" constant="100"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="57171" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="21" y="364" width="100" height="100"/>
+                                <state key="normal" image="menuIcons/doctor.png"/>
+                                <constraints>
+                                    <constraint id="57172" firstItem="57171" firstAttribute="width" constant="100"/>
+                                    <constraint id="57173" firstItem="57171" firstAttribute="height" constant="100"/>
+                                </constraints>
+                                <connections/>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint id="13060" firstItem="13045" firstAttribute="centerX" secondItem="13042" secondAttribute="centerX"/>
-                            <constraint id="13061" firstItem="13042" firstAttribute="centerY" secondItem="13045" secondAttribute="centerY" constant="5"/>
-                            <constraint id="13062" firstItem="13042" firstAttribute="trailingMargin" secondItem="13045" secondAttribute="trailing" constant="10"/>
-                            <constraint id="13063" firstItem="13045" firstAttribute="leading" secondItem="13042" secondAttribute="leadingMargin" constant="10"/>
-                            <constraint id="13204" firstItem="13203" firstAttribute="centerX" secondItem="13042" secondAttribute="centerX"/>
-                            <constraint id="13205" firstItem="13039" firstAttribute="top" secondItem="13203" secondAttribute="bottom" constant="10"/>
-                            <constraint id="13206" firstItem="13042" firstAttribute="trailingMargin" secondItem="13203" secondAttribute="trailing" constant="10"/>
-                            <constraint id="13207" firstItem="13203" firstAttribute="leading" secondItem="13042" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="36026" firstItem="36025" firstAttribute="top" secondItem="34228" secondAttribute="bottom" constant="10"/>
+                            <constraint id="36027" firstItem="36025" firstAttribute="centerX" secondItem="34232" secondAttribute="centerX"/>
+                            <constraint id="37336" firstItem="37335" firstAttribute="centerX" secondItem="34232" secondAttribute="centerX"/>
+                            <constraint id="37337" firstItem="34229" firstAttribute="top" secondItem="37335" secondAttribute="bottom" constant="10"/>
+                            <constraint id="39812" firstItem="39811" firstAttribute="leading" secondItem="34232" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="39813" firstItem="39811" firstAttribute="top" secondItem="34228" secondAttribute="bottom" constant="50"/>
+                            <constraint id="39816" firstItem="34240" firstAttribute="top" secondItem="39811" secondAttribute="bottom" constant="10"/>
+                            <constraint id="39817" firstItem="39811" firstAttribute="centerX" secondItem="34240" secondAttribute="centerX"/>
+                            <constraint id="40768" firstItem="34232" firstAttribute="trailingMargin" secondItem="40767" secondAttribute="trailing" constant="10"/>
+                            <constraint id="40769" firstItem="40767" firstAttribute="top" secondItem="34228" secondAttribute="bottom" constant="50"/>
+                            <constraint id="40772" firstItem="40767" firstAttribute="centerX" secondItem="34241" secondAttribute="centerX"/>
+                            <constraint id="40773" firstItem="34241" firstAttribute="top" secondItem="40767" secondAttribute="bottom" constant="10"/>
+                            <constraint id="41586" firstItem="41581" firstAttribute="leading" secondItem="34232" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="41588" firstItem="41581" firstAttribute="centerX" secondItem="34242" secondAttribute="centerX"/>
+                            <constraint id="41589" firstItem="34242" firstAttribute="top" secondItem="41581" secondAttribute="bottom" constant="10"/>
+                            <constraint id="41590" firstItem="41581" firstAttribute="top" secondItem="34240" secondAttribute="bottom" constant="15"/>
+                            <constraint id="42010" firstItem="34232" firstAttribute="trailingMargin" secondItem="42007" secondAttribute="trailing" constant="10"/>
+                            <constraint id="42011" firstItem="42007" firstAttribute="top" secondItem="34241" secondAttribute="bottom" constant="15"/>
+                            <constraint id="42012" firstItem="34243" firstAttribute="centerX" secondItem="42007" secondAttribute="centerX"/>
+                            <constraint id="42013" firstItem="34243" firstAttribute="top" secondItem="42007" secondAttribute="bottom" constant="10"/>
+                            <constraint id="42445" firstItem="34232" firstAttribute="trailingMargin" secondItem="42442" secondAttribute="trailing" constant="10"/>
+                            <constraint id="42446" firstItem="42442" firstAttribute="top" secondItem="34243" secondAttribute="bottom" constant="15"/>
+                            <constraint id="42447" firstItem="35177" firstAttribute="centerX" secondItem="42442" secondAttribute="centerX"/>
+                            <constraint id="42448" firstItem="35177" firstAttribute="top" secondItem="42442" secondAttribute="bottom" constant="10"/>
+                            <constraint id="57176" firstItem="57171" firstAttribute="leading" secondItem="34232" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="57177" firstItem="57171" firstAttribute="top" secondItem="34242" secondAttribute="bottom" constant="15"/>
+                            <constraint id="57179" firstItem="34245" firstAttribute="top" secondItem="57171" secondAttribute="bottom" constant="10"/>
+                            <constraint id="57180" firstItem="34245" firstAttribute="centerX" secondItem="57171" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="34233" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="34234" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2410" y="-291"/>
+        </scene>
+        <scene sceneID="47563">
+            <objects>
+                <viewController id="47564" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="47559"/>
+                        <viewControllerLayoutGuide type="bottom" id="47560"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="47565">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inactive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="47583" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="139" y="274" width="81" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48707" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="49582" destination="47579" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="48710" firstItem="48707" firstAttribute="height" constant="40"/>
+                                    <constraint id="48711" firstItem="48707" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescriptions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="48712" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="48721" firstItem="48707" firstAttribute="top" secondItem="47559" secondAttribute="bottom" constant="5"/>
+                            <constraint id="48722" firstItem="48707" firstAttribute="leading" secondItem="47565" secondAttribute="leadingMargin"/>
+                            <constraint id="53472" firstItem="48712" firstAttribute="top" secondItem="47559" secondAttribute="bottom" constant="10"/>
+                            <constraint id="53473" firstItem="48712" firstAttribute="centerX" secondItem="47565" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inactive" id="47566" image="inactive"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47567" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="47579" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4193" y="-297"/>
+        </scene>
+        <scene sceneID="47568">
+            <objects>
+                <viewController id="47569" sceneMemberID="viewController" customClass="ActivePrescriptionsViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="47561"/>
+                        <viewControllerLayoutGuide type="bottom" id="47562"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="47570">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48701" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="50066" destination="47580" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="48704" firstItem="48701" firstAttribute="height" constant="40"/>
+                                    <constraint id="48705" firstItem="48701" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescriptions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="48706" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="48719" firstItem="48701" firstAttribute="top" secondItem="47561" secondAttribute="bottom" constant="5"/>
+                            <constraint id="48720" firstItem="48701" firstAttribute="leading" secondItem="47570" secondAttribute="leadingMargin"/>
+                            <constraint id="53470" firstItem="48706" firstAttribute="centerX" secondItem="47570" secondAttribute="centerX"/>
+                            <constraint id="53471" firstItem="48706" firstAttribute="top" secondItem="47561" secondAttribute="bottom" constant="10"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Active" id="47571" image="active"/>
+                    <connections/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47572" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="47580" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3690" y="-296"/>
+        </scene>
+        <scene sceneID="47573">
+            <objects>
+                <tabBarController id="47574" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="47577">
+                        <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="47569" kind="relationship" relationship="viewControllers" id="47575"/>
+                        <segue destination="47564" kind="relationship" relationship="viewControllers" id="47576"/>
+                        <segue id="48252" destination="48165" kind="relationship" relationship="viewControllers"/>
+                    </connections>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47578" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3644" y="-1008"/>
+        </scene>
+        <scene sceneID="48164">
+            <objects>
+                <viewController id="48165" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="48169"/>
+                        <viewControllerLayoutGuide type="bottom" id="48170"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="48166">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archived" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="48167" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="139" y="274" width="101" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48713" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="49586" destination="48172" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="48716" firstItem="48713" firstAttribute="height" constant="40"/>
+                                    <constraint id="48717" firstItem="48713" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prescriptions" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="48718" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint id="48723" firstItem="48713" firstAttribute="top" secondItem="48169" secondAttribute="bottom" constant="5"/>
+                            <constraint id="48724" firstItem="48713" firstAttribute="leading" secondItem="48166" secondAttribute="leadingMargin"/>
+                            <constraint id="53474" firstItem="48718" firstAttribute="top" secondItem="48169" secondAttribute="bottom" constant="10"/>
+                            <constraint id="53475" firstItem="48718" firstAttribute="centerX" secondItem="48166" secondAttribute="centerX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Archived" id="48168" image="archived"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48171" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="48172" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4647" y="-299"/>
+        </scene>
+        <scene sceneID="53445">
+            <objects>
+                <viewController id="53446" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="53443"/>
+                        <viewControllerLayoutGuide type="bottom" id="53444"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="53447">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="53460" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="54163" destination="53450" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="53463" firstItem="53460" firstAttribute="height" constant="40"/>
+                                    <constraint id="53464" firstItem="53460" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53465" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53476" translatesAutoresizingMaskIntoConstraints="NO" text="This code contains your account information. Present it to a Pharmacist or Doctor to allow them to access your account" misplaced="YES" numberOfLines="6">
+                                <rect key="frame" x="51" y="73" width="215" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="53478" translatesAutoresizingMaskIntoConstraints="NO" image="otherMenuColours/whiteQrCode.png" misplaced="YES">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="53466" firstItem="53465" firstAttribute="top" secondItem="53443" secondAttribute="bottom" constant="10"/>
+                            <constraint id="53467" firstItem="53465" firstAttribute="centerX" secondItem="53447" secondAttribute="centerX"/>
+                            <constraint id="53468" firstItem="53460" firstAttribute="top" secondItem="53443" secondAttribute="bottom" constant="5"/>
+                            <constraint id="53469" firstItem="53460" firstAttribute="leading" secondItem="53447" secondAttribute="leadingMargin"/>
+                            <constraint id="54671" firstItem="53476" firstAttribute="top" secondItem="53465" secondAttribute="bottom" constant="10"/>
+                            <constraint id="55184" firstItem="53447" firstAttribute="trailingMargin" secondItem="53478" secondAttribute="trailing" constant="10"/>
+                            <constraint id="55185" firstItem="53478" firstAttribute="leading" secondItem="53447" secondAttribute="leadingMargin" constant="10"/>
+                            <constraint id="55186" firstItem="53478" firstAttribute="centerY" secondItem="53447" secondAttribute="centerY"/>
+                            <constraint id="75079" firstItem="53447" firstAttribute="trailingMargin" secondItem="53476" secondAttribute="trailing" constant="10"/>
+                            <constraint id="75080" firstItem="53476" firstAttribute="leading" secondItem="53447" secondAttribute="leadingMargin" constant="10"/>
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="13043" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="13044" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="53448" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="53450" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2447" y="-257"/>
+            <point key="canvasLocation" x="3645" y="1088"/>
+        </scene>
+        <scene sceneID="56219">
+            <objects>
+                <viewController id="56220" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="56217"/>
+                        <viewControllerLayoutGuide type="bottom" id="56218"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="56221">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drug List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="56227" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="56228" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="56267" destination="56223" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="56231" firstItem="56228" firstAttribute="height" constant="40"/>
+                                    <constraint id="56232" firstItem="56228" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint id="56233" firstItem="56228" firstAttribute="top" secondItem="56217" secondAttribute="bottom" constant="5"/>
+                            <constraint id="56234" firstItem="56228" firstAttribute="leading" secondItem="56221" secondAttribute="leadingMargin"/>
+                            <constraint id="56235" firstItem="56227" firstAttribute="centerX" secondItem="56221" secondAttribute="centerX"/>
+                            <constraint id="56236" firstItem="56227" firstAttribute="top" secondItem="56217" secondAttribute="bottom" constant="10"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56222" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="56223" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3678" y="419"/>
+        </scene>
+        <scene sceneID="60825">
+            <objects>
+                <viewController id="60826" sceneMemberID="viewController" customClass="pharmacyScreenViewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="60823"/>
+                        <viewControllerLayoutGuide type="bottom" id="60824"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="60827">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.43529411764705883" green="0.77647058823529413" blue="0.18431372549019609" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="60833" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="16" y="25" width="40" height="40"/>
+                                <state key="normal" backgroundImage="navArrowLeft">
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <connections>
+                                    <segue id="60914" destination="60829" kind="unwind" unwindAction="UnwindToMainMenu2:"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="60836" firstItem="60833" firstAttribute="height" constant="40"/>
+                                    <constraint id="60837" firstItem="60833" firstAttribute="width" constant="40"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pharmacies" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="60838" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="54" y="20" width="212" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="64686" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="16" y="73" width="288" height="495"/>
+                            </mapView>
+                        </subviews>
+                        <constraints>
+                            <constraint id="60839" firstItem="60833" firstAttribute="leading" secondItem="60827" secondAttribute="leadingMargin"/>
+                            <constraint id="60840" firstItem="60833" firstAttribute="top" secondItem="60823" secondAttribute="bottom" constant="5"/>
+                            <constraint id="60841" firstItem="60838" firstAttribute="top" secondItem="60823" secondAttribute="bottom" constant="10"/>
+                            <constraint id="60842" firstItem="60838" firstAttribute="centerX" secondItem="60827" secondAttribute="centerX"/>
+                            <constraint id="64687" firstItem="64686" firstAttribute="bottom" secondItem="60824" secondAttribute="top"/>
+                            <constraint id="64688" firstItem="64686" firstAttribute="top" secondItem="60838" secondAttribute="bottom" constant="10"/>
+                            <constraint id="64689" firstItem="64686" firstAttribute="leading" secondItem="60827" secondAttribute="leadingMargin"/>
+                            <constraint id="64690" firstItem="64686" firstAttribute="trailing" secondItem="60827" secondAttribute="trailingMargin"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="pharmacyMap" destination="64686" id="name-outlet-64686"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60828" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="60829" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3645" y="1729"/>
         </scene>
     </scenes>
     <resources>
@@ -517,5 +848,25 @@
         <image name="logo" width="1024" height="1024"/>
         <image name="smallerLogo" width="120" height="120"/>
         <image name="navArrowLeft" width="512" height="512"/>
+        <image name="menuIcons/list.png" width="512" height="512"/>
+        <image name="menuIcons/pharmacyCross.png" width="512" height="512"/>
+        <image name="menuIcons/prescriptions.png" width="512" height="512"/>
+        <image name="menuIcons/qrCode.png" width="512" height="512"/>
+        <image name="menuIcons/user.png" width="512" height="512"/>
+        <image name="placeholders/smolPlaceholder.png" width="100" height="100"/>
+        <image name="smolPlaceholder" width="100" height="100"/>
+        <image name="otherMenuColours/whiteQrCode.png" width="3000" height="3000"/>
+        <image name="menuIcons/doctor.png" width="512" height="512"/>
+        <image name="prescriptionIcons/active.png" width="512" height="512"/>
+        <image name="prescriptionIcons/archived.png" width="512" height="512"/>
+        <image name="prescriptionIcons/inactive.png" width="512" height="512"/>
+        <image name="active" width="75" height="75"/>
+        <image name="inactive" width="75" height="75"/>
+        <image name="archived" width="75" height="75"/>
+        <image name="mapIcons/pharmacyMapPin.png" width="512" height="512"/>
+        <image name="mapIcons/pharmacyMapPinSMALL.png" width="64" height="64"/>
+        <image name="mapIcons/userCurrentLocation.png" width="512" height="512"/>
+        <image name="mapIcons/userCurrentLocationSMALL.png" width="128" height="128"/>
+        <image name="pharmacyMapPinSMALL.png" width="64" height="64"/>
     </resources>
 </document>

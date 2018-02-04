@@ -73,8 +73,12 @@
 /Users/Ian/Projects/FYP/Droid/obj/Debug/res/values-v21/styles.xml
 /Users/Ian/Projects/FYP/Droid/obj/Debug/R.cs.flag
 /Users/Ian/Projects/FYP/Droid/obj/Debug/uploadflags.txt
-/Users/Ian/Projects/FYP/packages/Xam.Plugin.Connectivity.3.0.2/lib/MonoAndroid10/Plugin.Connectivity.dll
-/Users/Ian/Projects/FYP/packages/Plugin.Share.7.0.1/lib/MonoAndroid10/Plugin.Share.dll
+/Users/Ian/Projects/FYP/Droid/bin/Debug/Plugin.Share.dll.mdb
+/Users/Ian/Projects/FYP/Droid/bin/Debug/Plugin.Connectivity.dll.mdb
+/Users/Ian/Projects/FYP/Droid/obj/Debug/res/layout/testlayout.xml
+/Users/Ian/Projects/FYP/Droid/obj/Debug/res/layout/splashscreen.xml
+/Users/Ian/Projects/FYP/Droid/obj/Debug/res/drawable/appicon512.png
+/Users/Ian/Projects/FYP/Droid/obj/Debug/res/drawable/appicon256.png
 bin/Debug/Plugin.Connectivity.dll.mdb
 bin/Debug/Plugin.Share.dll.mdb
 bin/Debug/Mono.Android.pdb

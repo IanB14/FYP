@@ -27,6 +27,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>iOS Team Provisioning Profile: ian.FYP</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -122,6 +123,14 @@
     <ImageAsset Include="Assets.xcassets\smallerLogo.imageset\120x120.png" />
     <ImageAsset Include="Assets.xcassets\navArrowLeft.imageset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\navArrowLeft.imageset\navArrowLeft512.png" />
+    <ImageAsset Include="Assets.xcassets\smolPlaceholder.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\smolPlaceholder.imageset\smolPlaceholder.png" />
+    <ImageAsset Include="Assets.xcassets\active.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\active.imageset\smolActive.png" />
+    <ImageAsset Include="Assets.xcassets\inactive.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\inactive.imageset\smolInactive.png" />
+    <ImageAsset Include="Assets.xcassets\archived.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\archived.imageset\smolArchived.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDelegate.cs" />
@@ -142,10 +151,30 @@
     <Compile Include="LoginScreen.designer.cs">
       <DependentUpon>LoginScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="PrescriptionList.cs" />
-    <Compile Include="PrescriptionList.designer.cs">
-      <DependentUpon>PrescriptionList.cs</DependentUpon>
+    <Compile Include="MainMenu2.cs" />
+    <Compile Include="MainMenu2.designer.cs">
+      <DependentUpon>MainMenu2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Prescriptions.cs" />
+    <Compile Include="PrescriptionRootTableSource.cs" />
+    <Compile Include="ItemViewController.cs" />
+    <Compile Include="ItemViewController.designer.cs">
+      <DependentUpon>ItemViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActivePrescriptionsViewController.cs" />
+    <Compile Include="ActivePrescriptionsViewController.designer.cs">
+      <DependentUpon>ActivePrescriptionsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="CustomPrescriptionCell.cs" />
+    <Compile Include="TableItem.cs" />
+    <Compile Include="PharmacyScreenViewControllerrrr.cs" />
+    <Compile Include="pharmacyScreenViewController.cs" />
+    <Compile Include="pharmacyScreenViewController.designer.cs">
+      <DependentUpon>pharmacyScreenViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonkeyAnnotation.cs" />
+    <Compile Include="SearchResultsViewController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
@@ -159,11 +188,40 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\512x512.png" />
+    <BundleResource Include="Resources\menuIcons\list.png" />
+    <BundleResource Include="Resources\menuIcons\pharmacyCross.png" />
+    <BundleResource Include="Resources\menuIcons\prescriptions.png" />
+    <BundleResource Include="Resources\menuIcons\qrCode.png" />
+    <BundleResource Include="Resources\menuIcons\user.png" />
+    <BundleResource Include="Resources\placeholders\smolPlaceholder.png" />
+    <BundleResource Include="Resources\otherMenuColours\whiteQrCode.png" />
+    <BundleResource Include="Resources\menuIcons\doctor.png" />
+    <BundleResource Include="Resources\prescriptionIcons\active.png" />
+    <BundleResource Include="Resources\prescriptionIcons\archived.png" />
+    <BundleResource Include="Resources\prescriptionIcons\inactive.png" />
+    <BundleResource Include="Resources\mapIcons\pharmacyMapPin.png" />
+    <BundleResource Include="Resources\mapIcons\pharmacyMapPinSMALL.png" />
+    <BundleResource Include="Resources\mapIcons\userCurrentLocation.png" />
+    <BundleResource Include="Resources\mapIcons\userCurrentLocationSMALL.png" />
+    <BundleResource Include="pharmacyMapPinSMALL.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets.xcassets\logo.imageset\" />
     <Folder Include="Assets.xcassets\smallerLogo.imageset\" />
     <Folder Include="Assets.xcassets\navArrowLeft.imageset\" />
+    <Folder Include="Resources\menuIcons\" />
+    <Folder Include="Resources\placeholders\" />
+    <Folder Include="Assets.xcassets\smolPlaceholder.imageset\" />
+    <Folder Include="Resources\otherMenuColours\" />
+    <Folder Include="Resources\prescriptionIcons\" />
+    <Folder Include="Assets.xcassets\active.imageset\" />
+    <Folder Include="Assets.xcassets\active.imageset\" />
+    <Folder Include="Assets.xcassets\active.imageset\" />
+    <Folder Include="Assets.xcassets\active.imageset\" />
+    <Folder Include="Assets.xcassets\active.imageset\" />
+    <Folder Include="Assets.xcassets\inactive.imageset\" />
+    <Folder Include="Assets.xcassets\archived.imageset\" />
+    <Folder Include="Resources\mapIcons\" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork%402x" />
